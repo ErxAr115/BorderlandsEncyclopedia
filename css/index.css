@@ -1,0 +1,24 @@
+.description {
+    border: 5px solid #4c3575;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description img {
+    width: 250px;
+    height: auto;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.description .text {
+    text-align: center;
+    width: 700px;
+}
+
+.description p {
+    font-size: 20px;
+}

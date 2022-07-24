@@ -1,0 +1,35 @@
+p {
+    font-size: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.fecha {
+    margin-bottom: 10px;
+}
+
+.contenido {
+    border: 5px solid #4c3575;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.titulo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.imagen {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: auto;
+}

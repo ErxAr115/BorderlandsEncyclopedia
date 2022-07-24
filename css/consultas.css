@@ -1,0 +1,16 @@
+.tarjeta {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    border: 5px solid #4c3575;
+    padding: 5px;
+}
+
+.titulo, .autor, .fecha {
+    text-align: center;
+}
+
+.contenido {
+    text-align: justify;
+}
