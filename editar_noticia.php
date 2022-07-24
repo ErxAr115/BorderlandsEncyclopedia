@@ -71,7 +71,7 @@
             echo "<p class='autor'>$autor</p>";
             echo "<p class='fecha'>$fecha</p>";
             echo "<p class='contenido'>$contenido</p>";
-            echo "<a href=editar_noticia_form.php?id=$id class='enlace'>Editar noticia</a>&nbsp;&nbsp;<a href=#?id=$id class='enlace'>Eliminar noticia</a></p>";
+            echo "<a href=editar_noticia_form.php?id=$id class='enlace'>Editar noticia</a>&nbsp;&nbsp;<a href=eliminar_noticia.php?id=$id class='enlace'>Eliminar noticia</a></p>";
             echo "</div>";
         }
     ?>

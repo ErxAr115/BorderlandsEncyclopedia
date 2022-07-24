@@ -24,11 +24,10 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="img/Logo_B.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borderlands Encyclopedia</title>
 </head>
@@ -36,22 +35,16 @@
     <?php
         $link = Conectar();
 
-        if($_POST) {
-            $num = $_GET['id'];
-            $titulo = $_POST["titulo"];
-            $autor = $_POST["autor"];
-            $fecha = $_POST["fecha"];
-            $contenido = $_POST["contenido"];
-            $imagen = $_POST["imagen"];
+        if($_GET){
+            $num = $_GET["id"];
+            $queryDelete = "Delete from $tabla where noticia_id = '$num'";
 
-            $queryUpdate = "UPDATE $tabla set titulo = '$titulo', autor = '$autor', fecha = '$fecha', contenido = '$contenido', imagen = '$imagen' where noticia_id = '$num'";
+            $resultDelete = mysqli_query($link, $queryDelete);
 
-            $resultquery = mysqli_query($link, $queryUpdate);
-
-            if($resultquery) {
-                echo "<strong>Se actualizaron los registros con exito</strong>.<br>";
+            if($resultDelete) {
+                echo "<strong>Se borro el regsitro con exito</strong>";
             } else {
-                echo "No se actulizaron los registros.<br>";
+                echo "No se borro el registro.<br>";
             }
         }
     ?>

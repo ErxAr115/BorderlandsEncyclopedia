@@ -41,7 +41,7 @@
         $num = $_GET["id"];
     ?>
 
-<form action="" method="post">
+<form action="cambios_noticia.php?id=<?php echo $num?>" method="post">
     <?php
         $registros = mysqli_query($link, "SELECT * FROM noticias where noticia_id = $num");
         $row = mysqli_fetch_assoc($registros);
